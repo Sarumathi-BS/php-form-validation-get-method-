@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f8e8ee;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h2 {
+            text-align: center;
+            color: #6a0572;
+            margin-top: 20px;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 25px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 400px;
+            border: 3px solid #d3a0c0;
+            border-radius: 12px;
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #6a0572;
+            font-weight: bold;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #d3a0c0;
+            border-radius: 6px;
+        }
+        input[type=submit] {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #6a0572;
+            color: white;
+            border: none;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type=submit]:hover {
+            background-color: #4a0245;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="validation.php" method="get">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <label>Mobile:</label>
+    <input type="tel" name="mobile" placeholder="Enter your mobile number" required>
+
+    <label>College:</label>
+    <input type="text" name="college" placeholder="Enter your college name" required>
+
+    <label>Password:</label>
+    <input type="password" name="password" placeholder="Enter your password" required>
+
+    <label>Confirm Password:</label>
+    <input type="password" name="confirmPassword" placeholder="Re-enter your password" required>
+
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>
