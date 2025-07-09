@@ -10,7 +10,6 @@ A simple PHP project demonstrating form validation using the **GET** method with
   - 10-digit Indian mobile numbers
   - Strong password (min 8 chars, uppercase, lowercase, digit, special character)
   - Password match
-- Displays errors next to fields
 - Shows success message if all inputs are valid
 
 ##  How to Run
